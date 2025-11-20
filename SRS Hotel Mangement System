@@ -1,0 +1,73 @@
+Application - Hotel Management System
+
+Problem Statement:
+Running a hotel involves a lot of work managing bookings, assigning rooms, checking guests in and out, handling bills, and keeping track of availability. Doing all this manually often leads to mistakes, double bookings, or delays. Guests get frustrated when their stay is not smooth. A system is needed to make hotel operations faster, easier, and more organized.
+
+Software Requirements Specification (SRS):
+1. Introduction
+1.1 Purpose of this Document
+The purpose of this document is to outline the requirements and specifications for the development of a Hotel Management System (HMS). It provides a clear understanding of the project objectives, scope, features, and deliverables to ensure alignment between stakeholders, developers, and end-users.
+1.2 Scope of this Document
+The Hotel Management System will automate and streamline hotel operations, covering reservation management, guest check-in/check-out, room assignment, billing, reporting, and inventory management. This document also defines the estimated development cost, time frame, and technical considerations required for successful implementation.
+1.3 Overview
+The HMS is a software solution designed to improve hotel efficiency, enhance customer experience, and optimize resource utilization. The system will provide functionalities such as room booking, guest profile management, billing, financial reporting, and integration with external platforms (e.g., third-party booking services).
+
+2. General Description
+The Hotel Management System will serve hotel staff, managers, and guests. Staff members can handle reservations, room assignments, billing, and reporting, while guests can manage bookings and payments through an intuitive interface. The system will support different levels of technical expertise and ensure ease of use.
+
+3. Functional Requirements
+3.1 Reservation Management
+•	Allow users to make room reservations online or via the front desk.
+•	Generate reservation confirmations and send notifications to guests.
+
+3.2 Room Management
+•	Assign rooms based on availability and guest preferences.
+•	Track room status (clean, occupied, vacant) in real time.
+3.3 Guest Management
+•	Maintain guest profiles with personal information, preferences, and booking history.
+•	Facilitate seamless guest check-in and check-out processes.
+3.4 Billing and Invoicing
+•	Generate accurate bills for room charges, services, and taxes.
+•	Support multiple payment methods (cash, card, digital wallets).
+•	Generate invoices for corporate clients.
+
+4. Interface Requirements
+4.1 User Interface
+•	Intuitive, user-friendly interface for staff and guests.
+•	Accessible via web browsers, mobile devices, and desktop applications.
+4.2 Integration Interfaces
+•	Integration with secure payment gateways.
+•	Integration with third-party booking platforms (e.g., Booking.com, Expedia).
+
+5. Performance Requirements
+5.1 Response Time
+•	The system should respond to user actions within 2 seconds.
+5.2 Scalability
+•	Support at least 1000 concurrent users during peak load.
+5.3 Data Integrity
+•	Ensure accurate and consistent data across all modules.
+
+6. Design Constraints
+6.1 Hardware Limitations
+•	Compatible with standard hotel hardware: computers, printers, POS terminals.
+6.2 Software Dependencies
+•	Relational Database Management System (e.g., MySQL).
+•	Backend development with Java + Spring Boot.
+7. Non-Functional Attributes
+7.1 Security
+•	Implement strong authentication and authorization mechanisms.
+•	Encrypt sensitive guest and financial data.
+7.2 Reliability
+•	High availability with minimal downtime.
+•	Fault tolerance in case of failures.
+7.3 Scalability
+•	Support easy expansion to handle more users and hotels.
+7.4 Portability
+•	Cross-platform support: web, Android, iOS.
+7.5 Usability
+•	Clean navigation and easy-to-use interface.
+
+8. Preliminary Schedule and Budget
+Estimated Duration: 6 months
+Estimated Budget: $100,000
+Includes planning, development, testing, deployment, and maintenance.

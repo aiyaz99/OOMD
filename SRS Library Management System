@@ -1,0 +1,90 @@
+Application - Library Management System
+
+Problem Statement:
+Libraries often struggle with keeping track of books and users. If things are done manually, books get misplaced, fines are hard to calculate, and searching for a book takes a lot of time. Students and librarians both face difficulties. A system is needed to make borrowing, returning, and managing books simple and fast.
+
+Software Requirements Specification (SRS):
+1. Introduction
+1.1 Purpose of this Document
+The purpose of this document is to provide a clear, concise, and detailed Software Requirements Specification (SRS) for the Library Management System (LMS). This document defines the functionality, features, constraints, and the general system requirements for the LMS to ensure the successful development and implementation of the system.
+1.2 Scope of this Document
+This document covers all the essential information related to the development of the Library Management System, including functional and non-functional requirements, user interfaces, design constraints, and other system attributes. The system will be designed to automate the process of managing library resources, such as books, journals, and memberships. The system will handle the management of books, member registration, book issuing, return, overdue fines, and generating reports. 
+1.3 Overview
+The Library Management System (LMS) is designed to automate the processes involved in managing library resources. It enables users (members) to browse, borrow, and return books, while administrators and librarians can manage books, members, and issue books. The LMS will also include an interface for generating reports, handling overdue fines, and maintaining accurate records of all transactions. The product will include: 
+Web-based User Interface: Accessible by library members, librarians, and administrators. 
+Backend System: A database for storing book and member details, along with transaction records. 
+Admin Panel: For library management and administrative functions.
+2. General Description
+2.1 General Functions
+ The main function of the Library Management System is to provide an automated solution to library operations. The system will: Allow members to register, search for books, borrow, and return them. Enable librarians to manage the issuing, returning, and availability status of books. Facilitate the management of library members (registration, modification, deletion). Enable administrators to generate reports, handle overdue fines, and maintain system records.
+
+ 2.2 User Characteristics
+ The Library Management System will have three distinct types of users: 
+Admin: The admin has full control over the system, including managing books, users, fines, and
+reports.
+ Librarian: The librarian will be responsible for issuing and receiving books, managing due dates, and handling fines.
+ Member: The member can search for books, borrow books, check due dates, and pay fines. 
+
+3. Functional Requirements
+3.1 User Registration and Authentication 
+Requirement: Users must be able to register and log into the system.
+Outcome: Users will be able to access personalized services (e.g., borrow books, check fines, renew books).
+Details: The system must authenticate users using secure login credentials (email/username and password).
+3.2 Book Management
+•	Requirement: The system must allow admins and librarians to manage books (add, update, delete).
+•	Outcome Library books will be correctly managed and updated in real-time.
+•	Details: Admins can add books with detailed information (title, author, ISBN, genre, etc.) and can track the status of each book (available, issued, overdue).
+3.3 Borrowing and Returning Books
+•	Requirement: The system must track the borrowing and returning of books.
+•	Outcome: The library will have an up-to-date record of which books are currently issued and their due dates.
+•	Details: When a book is borrowed, the system should update its status to "issued" and set a due date. Upon return, the book status is updated to "available".
+3.4 Fine Management
+•	Requirement: The system must calculate and track fines for overdue books.
+•	Outcome: Members who return books late will be fined according to the library’s fine policy.
+•	Details Fines should be calculated based on the number of overdue days, and the system should notify the user of outstanding fines.
+
+
+
+4. Interface Requirements
+4.1 Software Interfaces
+•	Database: The system must interface with a relational database to store and retrieve data related to books, members, and transactions. 
+•	Admin Interface: Admins will interact with the system via a web-based interface to manage users, books, and generate reports. 
+•	Member Interface: Members will interact with the system via a web interface to search for books, borrow books, check fines, and manage their accounts.
+4.2 Communication Interfaces
+•	Web Interface: The software should communicate through HTTP/HTTPS protocols.
+•	Data Exchange: Data exchange between the frontend and backend should be done using REST APIs (JSON format). 
+
+5. Performance Requirements
+5.1 System Response Time
+•	Requirement: The system should return search results for books within 2 seconds.
+•	Requirement: Actions such as logging in, borrowing books, and returning books should be completed within 5 seconds.
+5.2 Scalability
+•	Requirement: The system should be able to handle up to 1000 concurrent users without degradation in performance.
+5.3 Database Performance
+•	Requirement: The database should support quick query execution for tasks like book search, user lookup, and transaction recording.
+
+6. Design Constraints
+6.1 Technology Constraints
+•	Requirement: The system must be developed using the latest stable versions of web technologies like HTML5, CSS3, JavaScript, and Python (Django) or Java (Spring Boot) for the backend.
+•	Limitation: The system should be compatible with modern web browsers (Chrome, Firefox, Edge).
+6.2 Hardware Constraints
+•	Requirement: The system must operate on standard hardware, which includes servers with at least 8GB of RAM and 1TB of storage for initial deployment.
+
+
+7. Non-Functional Attributes
+7.1 Security
+•	Requirement: User data, including login credentials, must be encrypted using modern encryption techniques (e.g., AES, bcrypt).
+•	Requirement The system must prevent unauthorized access and support role-based access control (RBAC).
+7.2 Reliability
+•	Requirement: The system should have 99.9% uptime, ensuring availability during peak library usage times.
+7.3 Scalability
+•	Requirement: The system should support scaling to handle increased usage, with the ability to add more servers as needed.
+
+8. Preliminary Schedule and Budget
+8.1 Development Schedule
+•	Phase 1 (Design): 1 month
+•	Phase 2 (Implementation): 3 months
+•	Phase 3 (Testing): 1 month
+•	Phase 4 (Deployment and Support): 1 month
+8.2 Budget
+The estimated budget for the development of the Library Management System is $50,000. This includes costs for development, testing, deployment, and initial support kindly give me SRS document same as this for credit card processing system
